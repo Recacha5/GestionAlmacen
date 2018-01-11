@@ -5,13 +5,16 @@
  */
 package Menus;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Alex Recacha
  */
 public class Menu {
     
-    public static void pintaMenu(){
+    public static int pintaMenu(){
+        Scanner sc = new Scanner (System.in);
         
         System.out.println("----------Menú Almacén----------");
         System.out.println("1- Precio de todas las bebidas.");
@@ -23,6 +26,8 @@ public class Menu {
         System.out.println("7- Salir.");
         System.out.println("--------------------------------");
         
+        System.out.println("Dime una opcion...");
+        return sc.nextInt();
     }
     
 }
